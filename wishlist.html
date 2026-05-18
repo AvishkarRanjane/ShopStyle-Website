@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wishlist - ShopStyle</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo-section">
+                <a href="index.html" class="logo"><i class="fas fa-shopping-bag"></i> ShopStyle</a>
+            </div>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Shop</a></li>
+            </ul>
+            
+            <div class="nav-right">
+                <a href="wishlist.html" class="nav-icon"><i class="far fa-heart"></i><span id="wishlist-count" class="badge">0</span></a>
+                <a href="cart.html" class="nav-icon"><i class="fas fa-shopping-cart"></i><span id="cart-count" class="badge">0</span></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Wishlist Section -->
+    <section style="padding: 2rem; background: white; min-height: 60vh;">
+        <div class="container">
+            <h1 style="font-size: 2rem; margin-bottom: 2rem;">My Wishlist</h1>
+            
+            <div id="wishlist-items" class="products-grid"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>ShopStyle</h4>
+                    <p>Premium fashion store</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ShopStyle. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

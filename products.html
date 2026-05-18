@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop All Products - ShopStyle</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo-section">
+                <a href="index.html" class="logo"><i class="fas fa-shopping-bag"></i> ShopStyle</a>
+            </div>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Shop<i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="products.html?category=men"><i class="fas fa-mars"></i> Men's Clothing</a></li>
+                        <li><a href="products.html?category=women"><i class="fas fa-venus"></i> Women's Clothing</a></li>
+                        <li><a href="products.html?category=kids"><i class="fas fa-child"></i> Kids' Wear</a></li>
+                        <li><a href="products.html?category=accessories"><i class="fas fa-ring"></i> Accessories</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html#deals">Special Deals</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            
+            <div class="nav-right">
+                <div class="search-container">
+                    <input type="text" id="search-bar" placeholder="Search products..." class="search-bar">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+                <a href="wishlist.html" class="nav-icon" title="Wishlist"><i class="far fa-heart"></i><span id="wishlist-count" class="badge">0</span></a>
+                <a href="cart.html" class="nav-icon" title="Shopping Cart"><i class="fas fa-shopping-cart"></i><span id="cart-count" class="badge">0</span></a>
+                <a href="account.html" class="nav-icon" title="Account"><i class="fas fa-user-circle"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Products Section -->
+    <section style="padding: 2rem; background: white; min-height: 60vh;">
+        <div class="container">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+                <h1 style="font-size: 2rem;">Shop All Products</h1>
+                <div>
+                    <label style="margin-right: 1rem;">Sort by:</label>
+                    <select id="sort-by" onchange="updateSort()" style="padding: 0.5rem; border: 1px solid #e2e8f0; border-radius: 4px;">
+                        <option value="">Featured</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="rating">Highest Rated</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div id="product-grid" class="products-grid"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4><i class="fas fa-shopping-bag"></i> ShopStyle</h4>
+                    <p>Your one-stop destination for premium fashion.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ShopStyle. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
