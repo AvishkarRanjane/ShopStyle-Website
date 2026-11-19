@@ -5,32 +5,32 @@ let wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
 // ==================== PRODUCT DATABASE ====================
 const productsDatabase = [
     // Men's Clothing
-    { id: 1, name: 'Premium Cotton T-Shirt', price: 29.99, discount: 20, rating: 4.8, category: 'men', image: 'https://source.unsplash.com/300x350/?mens,tshirt,1', description: 'Comfortable and stylish cotton t-shirt' },
-    { id: 2, name: 'Slim Fit Jeans', price: 59.99, discount: 15, rating: 4.6, category: 'men', image: 'https://source.unsplash.com/300x350/?mens,jeans,1', description: 'Perfect fit slim jeans' },
-    { id: 3, name: 'Casual Shirt', price: 49.99, discount: 10, rating: 4.7, category: 'men', image: 'https://source.unsplash.com/300x350/?mens,shirt,1', description: 'Casual shirt for everyday wear' },
-    { id: 4, name: 'Sport Jacket', price: 89.99, discount: 25, rating: 4.9, category: 'men', image: 'https://source.unsplash.com/300x350/?mens,jacket,1', description: 'Premium sport jacket' },
-    { id: 5, name: 'Polo Shirt', price: 34.99, discount: 18, rating: 4.5, category: 'men', image: 'https://source.unsplash.com/300x350/?mens,polo,1', description: 'Classic polo shirt' },
-    { id: 6, name: 'Formal Trousers', price: 64.99, discount: 12, rating: 4.8, category: 'men', image: 'https://source.unsplash.com/300x350/?mens,pants,1', description: 'Formal trousers for office' },
+    { id: 1, name: 'Premium Cotton T-Shirt', price: 29.99, discount: 20, rating: 4.8, category: 'men', image: 'https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=500&auto=format&fit=crop&q=80', description: 'Comfortable and stylish cotton t-shirt' },
+    { id: 2, name: 'Slim Fit Jeans', price: 59.99, discount: 15, rating: 4.6, category: 'men', image: 'https://images.unsplash.com/photo-1542272604-780c96856592?w=500&auto=format&fit=crop&q=80', description: 'Perfect fit slim jeans' },
+    { id: 3, name: 'Casual Shirt', price: 49.99, discount: 10, rating: 4.7, category: 'men', image: 'https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=500&auto=format&fit=crop&q=80', description: 'Casual shirt for everyday wear' },
+    { id: 4, name: 'Sport Jacket', price: 89.99, discount: 25, rating: 4.9, category: 'men', image: 'https://images.unsplash.com/photo-1551028719-00167b16eac5?w=500&auto=format&fit=crop&q=80', description: 'Premium sport jacket' },
+    { id: 5, name: 'Polo Shirt', price: 34.99, discount: 18, rating: 4.5, category: 'men', image: 'https://images.unsplash.com/photo-1625910513413-7e61a49479b1?w=500&auto=format&fit=crop&q=80', description: 'Classic polo shirt' },
+    { id: 6, name: 'Formal Trousers', price: 64.99, discount: 12, rating: 4.8, category: 'men', image: 'https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?w=500&auto=format&fit=crop&q=80', description: 'Formal trousers for office' },
     
     // Women's Clothing
-    { id: 7, name: 'Summer Dress', price: 54.99, discount: 30, rating: 4.9, category: 'women', image: 'https://source.unsplash.com/300x350/?womens,dress,1', description: 'Beautiful summer dress' },
-    { id: 8, name: 'Denim Jacket', price: 69.99, discount: 20, rating: 4.7, category: 'women', image: 'https://source.unsplash.com/300x350/?womens,jacket,1', description: 'Classic denim jacket' },
-    { id: 9, name: 'Women Jeans', price: 52.99, discount: 18, rating: 4.8, category: 'women', image: 'https://source.unsplash.com/300x350/?womens,jeans,1', description: 'Trendy women jeans' },
-    { id: 10, name: 'Casual Top', price: 32.99, discount: 15, rating: 4.6, category: 'women', image: 'https://source.unsplash.com/300x350/?womens,top,1', description: 'Casual comfortable top' },
-    { id: 11, name: 'Evening Gown', price: 129.99, discount: 25, rating: 5.0, category: 'women', image: 'https://source.unsplash.com/300x350/?womens,gown,1', description: 'Elegant evening gown' },
-    { id: 12, name: 'Blazer', price: 79.99, discount: 22, rating: 4.8, category: 'women', image: 'https://source.unsplash.com/300x350/?womens,blazer,1', description: 'Professional blazer' },
+    { id: 7, name: 'Summer Dress', price: 54.99, discount: 30, rating: 4.9, category: 'women', image: 'https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=500&auto=format&fit=crop&q=80', description: 'Beautiful summer dress' },
+    { id: 8, name: 'Denim Jacket', price: 69.99, discount: 20, rating: 4.7, category: 'women', image: 'https://images.unsplash.com/photo-1544441893-675973e31985?w=500&auto=format&fit=crop&q=80', description: 'Classic denim jacket' },
+    { id: 9, name: 'Women Jeans', price: 52.99, discount: 18, rating: 4.8, category: 'women', image: 'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=500&auto=format&fit=crop&q=80', description: 'Trendy women jeans' },
+    { id: 10, name: 'Casual Top', price: 32.99, discount: 15, rating: 4.6, category: 'women', image: 'https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=500&auto=format&fit=crop&q=80', description: 'Casual comfortable top' },
+    { id: 11, name: 'Evening Gown', price: 129.99, discount: 25, rating: 5.0, category: 'women', image: 'https://images.unsplash.com/photo-1566174053879-31528523f8ae?w=500&auto=format&fit=crop&q=80', description: 'Elegant evening gown' },
+    { id: 12, name: 'Blazer', price: 79.99, discount: 22, rating: 4.8, category: 'women', image: 'https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=500&auto=format&fit=crop&q=80', description: 'Professional blazer' },
     
     // Kids' Clothing
-    { id: 13, name: 'Kids T-Shirt', price: 19.99, discount: 15, rating: 4.5, category: 'kids', image: 'https://source.unsplash.com/300x350/?kids,tshirt,1', description: 'Colorful kids t-shirt' },
-    { id: 14, name: 'Kids Shorts', price: 24.99, discount: 20, rating: 4.6, category: 'kids', image: 'https://source.unsplash.com/300x350/?kids,shorts,1', description: 'Comfortable kids shorts' },
-    { id: 15, name: 'Kids Dress', price: 34.99, discount: 18, rating: 4.7, category: 'kids', image: 'https://source.unsplash.com/300x350/?kids,dress,1', description: 'Cute kids dress' },
-    { id: 16, name: 'Kids Hoodie', price: 44.99, discount: 25, rating: 4.8, category: 'kids', image: 'https://source.unsplash.com/300x350/?kids,hoodie,1', description: 'Warm kids hoodie' },
+    { id: 13, name: 'Kids T-Shirt', price: 19.99, discount: 15, rating: 4.5, category: 'kids', image: 'https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?w=500&auto=format&fit=crop&q=80', description: 'Colorful kids t-shirt' },
+    { id: 14, name: 'Kids Shorts', price: 24.99, discount: 20, rating: 4.6, category: 'kids', image: 'https://images.unsplash.com/photo-1503944572-882298642754?w=500&auto=format&fit=crop&q=80', description: 'Comfortable kids shorts' },
+    { id: 15, name: 'Kids Dress', price: 34.99, discount: 18, rating: 4.7, category: 'kids', image: 'https://images.unsplash.com/photo-1622290291468-a28f7a7dc6a8?w=500&auto=format&fit=crop&q=80', description: 'Cute kids dress' },
+    { id: 16, name: 'Kids Hoodie', price: 44.99, discount: 25, rating: 4.8, category: 'kids', image: 'https://images.unsplash.com/photo-1508873696983-2df5293cb32f?w=500&auto=format&fit=crop&q=80', description: 'Warm kids hoodie' },
     
     // Accessories
-    { id: 17, name: 'Sports Shoes', price: 84.99, discount: 20, rating: 4.9, category: 'accessories', image: 'https://source.unsplash.com/300x350/?shoes,sports,1', description: 'Premium sports shoes' },
-    { id: 18, name: 'Casual Sneakers', price: 69.99, discount: 15, rating: 4.7, category: 'accessories', image: 'https://source.unsplash.com/300x350/?sneakers,1', description: 'Casual sneakers' },
-    { id: 19, name: 'Leather Belt', price: 29.99, discount: 10, rating: 4.6, category: 'accessories', image: 'https://source.unsplash.com/300x350/?belt,leather,1', description: 'Quality leather belt' },
-    { id: 20, name: 'Sunglasses', price: 44.99, discount: 12, rating: 4.8, category: 'accessories', image: 'https://source.unsplash.com/300x350/?sunglasses,1', description: 'Stylish sunglasses' },
+    { id: 17, name: 'Sports Shoes', price: 84.99, discount: 20, rating: 4.9, category: 'accessories', image: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&auto=format&fit=crop&q=80', description: 'Premium sports shoes' },
+    { id: 18, name: 'Casual Sneakers', price: 69.99, discount: 15, rating: 4.7, category: 'accessories', image: 'https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=500&auto=format&fit=crop&q=80', description: 'Casual sneakers' },
+    { id: 19, name: 'Leather Belt', price: 29.99, discount: 10, rating: 4.6, category: 'accessories', image: 'https://images.unsplash.com/photo-1624222247344-550fb60583dc?w=500&auto=format&fit=crop&q=80', description: 'Quality leather belt' },
+    { id: 20, name: 'Sunglasses', price: 44.99, discount: 12, rating: 4.8, category: 'accessories', image: 'https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=500&auto=format&fit=crop&q=80', description: 'Stylish sunglasses' },
 ];
 
 // ==================== INITIALIZATION ====================
