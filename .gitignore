@@ -1,0 +1,24 @@
+# Secrets & Environment
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+credentials.json
+serviceAccountKey*.json
+
+# Dependencies
+node_modules/
+vendor/
+
+# Build & Logs
+dist/
+build/
+*.log
+
+# OS & Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
